@@ -7,7 +7,7 @@
 
 //CORES
 @cinza-padrao : #777777;
-@cinza-claro : lighten(@cinza-padrao, 50%); 
+@cinza-claro : lighten(@cinza-padrao, 40%); 
 
 
 
@@ -19,10 +19,29 @@
 /* No media query since this is the default in Bootstrap */
 //////////////////////////////////////////////
 
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+hr{
+	 margin-top: 0px; 
+	 margin-bottom: 0px;
+	 border-top: 1px solid @cinza-claro;
+}
+
+
+.navbar-collapse{
+	.navbar-form{
+		width: 100%;	
+	}		
+}
 
 
 /* --- header ---  */
 header{
+
+	
 	
 	
 }
@@ -54,12 +73,6 @@ footer{
 
 
 /* --- .img-destaque-home---  */
-
-.container {
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
 .img-destaque-home{
 	background-color: @cinza-claro;
 	
@@ -70,13 +83,53 @@ footer{
 		background-image: url('../img/dotores.jpg');
 		background-size: 100%;
 		background-repeat: no-repeat;
-		height: 200px;	
+		height: 180px;	
 		margin-right: auto;
 		margin-left: auto;
 		width: 100%;
 	}
 }
 
+
+.divisoria-tipo-01{
+	p{
+		.text-uppercase;
+		.text-center;
+	}
+	
+	.col-esq{
+		border-right: solid 1px @cinza-claro;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.col-dir{
+		border-left: solid 1px @cinza-claro;
+		padding-left: 0px;
+		padding-right: 0px;		
+	}
+}
+
+
+.vitrine-tipo-home{
+	.center-block;
+	.text-center;
+	img.logo-parceiros{
+		height: 40px;
+	}
+}
+
+
+//////////////////////////////////////////////
+/* Extra-small devices ONLY  */
+//////////////////////////////////////////////
+
+@media (max-width: @screen-xs-max){
+	.row{
+		margin-left: 0px; 
+		margin-right: 0px; 
+	}
+}
 
 //////////////////////////////////////////////
 /* Small devices (tablets, 768px and up) */
@@ -146,7 +199,13 @@ footer{
 /* Medium devices (desktops, 992px and up) */
 //////////////////////////////////////////////
 @media (min-width: @screen-md-min) {
-
+	
+	.navbar-collapse{
+		.navbar-form{
+			width: 170px;	
+		}		
+	}
+	
 
 	/* --- .img-destaque-home---  */
 	.img-destaque-home{
