@@ -67,18 +67,7 @@
 
 	<div class="vitrine-tipo-home container">
 			<div class="row">
-				<div class="col-sm-3">
-					<img src="img/logo/primeiro.jpg" class="logo-parceiros">
-				</div> <!-- col-sm-3 -->
-				<div class="col-sm-3">
-					<img src="img/logo/primeiro.jpg" class="logo-parceiros">
-				</div> <!-- col-sm-3 -->
-				<div class="col-sm-3">
-					<img src="img/logo/primeiro.jpg" class="logo-parceiros">				
-				</div> <!-- col-sm-3 -->
-				<div class="col-sm-3">
-					<img src="img/logo/primeiro.jpg" class="logo-parceiros">			
-				</div> <!-- col-sm-3 -->
+
 			</div>
 			<!-- row -->
 	
@@ -88,7 +77,21 @@
 	<div class="form-simples"></div>
 	<!-- /form-simples -->
 
-	<div class="divisoria-tipo-01"></div>
+	<div class="divisoria-tipo-01 container-fluid">
+		<div class="row">
+		
+			<div class="col-xs-4 col-md-5 col-esq">
+				<p><hr></p>
+			</div>
+			<div class="col-xs-4 col-md-2">
+				<p> Parceiros</p>
+			</div>
+			<div class="col-xs-4 col-md-5 col-dir">
+				<p><hr></p>
+			</div>
+		
+		</div>
+	</div>
 	<!-- /divisoria-tipo-01 -->
 
 	<div class="vitrine-parceiros container">
