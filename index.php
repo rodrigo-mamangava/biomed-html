@@ -67,20 +67,20 @@
 
 	<div class="vitrine-tipo-home container">
 			<div class="row">
-			<div class="col-sm-3">
-				<img src="img/logo/primeiro.jpg" class="logo-parceiros">
-			</div> <!-- col-sm-3 -->
-			<div class="col-sm-3">
-				<img src="img/logo/primeiro.jpg" class="logo-parceiros">
-			</div> <!-- col-sm-3 -->
-			<div class="col-sm-3">
-				<img src="img/logo/primeiro.jpg" class="logo-parceiros">				
-			</div> <!-- col-sm-3 -->
-			<div class="col-sm-3">
-				<img src="img/logo/primeiro.jpg" class="logo-parceiros">			
-			</div> <!-- col-sm-3 -->
-		</div>
-		<!-- row -->
+				<div class="col-sm-3">
+					<img src="img/logo/primeiro.jpg" class="logo-parceiros">
+				</div> <!-- col-sm-3 -->
+				<div class="col-sm-3">
+					<img src="img/logo/primeiro.jpg" class="logo-parceiros">
+				</div> <!-- col-sm-3 -->
+				<div class="col-sm-3">
+					<img src="img/logo/primeiro.jpg" class="logo-parceiros">				
+				</div> <!-- col-sm-3 -->
+				<div class="col-sm-3">
+					<img src="img/logo/primeiro.jpg" class="logo-parceiros">			
+				</div> <!-- col-sm-3 -->
+			</div>
+			<!-- row -->
 	
 	</div>
 	<!-- /vitrine-tipo-home -->
@@ -91,7 +91,24 @@
 	<div class="divisoria-tipo-01"></div>
 	<!-- /divisoria-tipo-01 -->
 
-	<div class="vitrine-parceiros"></div>
+	<div class="vitrine-parceiros container">
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="img/logo/primeiro.jpg" class="logo-parceiros">
+				</div> <!-- col-sm-3 -->
+				<div class="col-sm-3">
+					<img src="img/logo/primeiro.jpg" class="logo-parceiros">
+				</div> <!-- col-sm-3 -->
+				<div class="col-sm-3">
+					<img src="img/logo/primeiro.jpg" class="logo-parceiros">				
+				</div> <!-- col-sm-3 -->
+				<div class="col-sm-3">
+					<img src="img/logo/primeiro.jpg" class="logo-parceiros">			
+				</div> <!-- col-sm-3 -->
+			</div>
+			<!-- row -->
+	
+	</div>
 	<!-- /vitrine-parceiros -->
 
 	<footer></footer>
