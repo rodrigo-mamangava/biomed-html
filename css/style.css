@@ -6365,7 +6365,7 @@ footer .sessao-footer h4 {
     padding-top: 70px;
   }
   header .navbar-default .navbar-collapse .navbar-nav > li {
-    margin: 0 3px;
+    margin: 0 0 0 10px ;
   }
   header .navbar-default .container-fluid {
     padding-left: 0;
