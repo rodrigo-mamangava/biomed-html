@@ -5,6 +5,11 @@
 
 //== Colors
 //
+@cinza-padrao : #777777;
+@cinza-claro : lighten(@cinza-padrao, 40%); 
+@azul-padrao: #00CCFF;
+
+
 //## Gray and brand colors for use across Bootstrap.
 
 @gray-base:              #000;
@@ -274,7 +279,7 @@
 
 // Extra small screen / phone
 //** Deprecated `@screen-xs` as of v3.0.1
-@screen-xs:                  480px;
+@screen-xs:                  481px;
 //** Deprecated `@screen-xs-min` as of v3.2.0
 @screen-xs-min:              @screen-xs;
 //** Deprecated `@screen-phone` as of v3.0.1
@@ -282,7 +287,7 @@
 
 // Small screen / tablet
 //** Deprecated `@screen-sm` as of v3.0.1
-@screen-sm:                  480px;
+@screen-sm:                  481px;
 @screen-sm-min:              @screen-sm;
 //** Deprecated `@screen-tablet` as of v3.0.1
 @screen-tablet:              @screen-sm-min;
@@ -337,7 +342,7 @@
 @container-md:                 @container-desktop;
 
 // Large screen / wide desktop
-@container-large-desktop:      (1140px + @grid-gutter-width);
+@container-large-desktop:      (720px + @grid-gutter-width);
 //** For `@screen-lg-min` and up.
 @container-lg:                 @container-large-desktop;
 
@@ -792,15 +797,15 @@
 //
 //##
 
-@carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);
+@carousel-text-shadow:                        0;
 
-@carousel-control-color:                      #fff;
+@carousel-control-color:                      @azul-padrao;
 @carousel-control-width:                      15%;
-@carousel-control-opacity:                    .5;
+@carousel-control-opacity:                    1;
 @carousel-control-font-size:                  20px;
 
-@carousel-indicator-active-bg:                #fff;
-@carousel-indicator-border-color:             #fff;
+@carousel-indicator-active-bg:                black;
+@carousel-indicator-border-color:             gray;
 
 @carousel-caption-color:                      #fff;
 
