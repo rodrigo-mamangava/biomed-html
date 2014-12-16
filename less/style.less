@@ -5,18 +5,15 @@
 //DISTANCIAS
 @border-radius-menu: 0px;
 
-//CORES
-
-
-
-
-
-
 
 //////////////////////////////////////////////
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 //////////////////////////////////////////////
+
+body{
+	font-family: @font-lato;
+}
 
 .container {
 	padding-left: 0px;
@@ -40,6 +37,25 @@ hr{
 /* --- header ---  */
 header{
 
+	.form-buscar{
+		//position: relative;
+		
+		input{
+			border: 0px;
+			border-top: 1px solid #cccccc;
+			border-bottom: 1px solid #cccccc;
+			border-left: 1px solid #cccccc;
+		}
+		
+		.btn-find{
+			border-left: 0px;	
+		}
+				
+	}
+
+	.btn-find{
+		//border: 0;
+	}
 	
 	
 	
@@ -160,7 +176,7 @@ footer{
 }
 
 .form-simples{
-	background-color: @azul-padrao;
+	background-color: @azul-claro;
 	vertical-align: middle;
 	padding: 3px 4px;
 	.text-center;
@@ -200,7 +216,7 @@ footer{
 
 
 .barra-local{
-	color: @azul-padrao;
+	color: @azul-claro;
 	vertical-align: text-bottom;
 	h1{
 		.text-left;
@@ -224,7 +240,7 @@ footer{
 		.text-center;
 		margin-bottom: 40px;
 		h3{
-			color: @amarelo-padrao;
+			color: @laranja;
 		}
 		
 	}
@@ -246,7 +262,7 @@ footer{
 		
 		.nome-estado{
 			.text-capitalize;
-			color: @azul-padrao;
+			color: @azul-claro;
 			border-top: solid black 1px;
 			border-bottom: solid black 1px;
 		}
@@ -284,13 +300,41 @@ footer{
 	
 	/* --- header---  */
 	header{
+		
+		.navbar-nav{
+			.text-uppercase;
+		}
+		
+		.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+			background-color: transparent;
+			color: #005596;
+			border-left: solid 1px @azul-escuro;
+		}
+		
+		.menu-padrao{
+			border: 0;
+			border-radius: 0px;
+			box-shadow: none;
+			-webkit-box-shadow: none;
+			font-size: 1em;
+			border-left: solid 1px @azul-escuro;
+			text-transform: initial;
+			
+			& > li > a{
+				padding: 3px 15px;
+				line-height: 1.4em;
+				padding-top: 0px;
+				
+			}
+		}
+		
 		.navbar-default {	
 
 		
 		.navbar-collapse{
 			.navbar-nav{
 				&>li{
-					margin: 0 0 0 10px ;
+					margin: 0 0 0 0px ;
 				}
 			}
 		}

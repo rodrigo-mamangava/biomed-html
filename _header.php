@@ -6,6 +6,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -50,34 +51,33 @@ $(function() {
 		        <li><a href="empresa.php">Empresa</a></li>
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-		          	Produtos
-		          	<span class="caret"></span>
+		          	Produtos		          	
 		          </a>
-		          <ul class="dropdown-menu dropdown-menu-left" role="menu">
-		            <li><a href="#">Produto 01</a></li>
-		            <li><a href="#">Produto 02</a></li>
-		            <li><a href="#">Produto 03</a></li>
-		            <li><a href="#">Produto 04</a></li>
+		          <ul class="dropdown-menu dropdown-menu-left menu-padrao" role="menu">
+		            <li><a href="#">Eletroencefalografia</a></li>
+		            <li><a href="#">Eletromiografia</a></li>
+		            <li><a href="#">Polissonografia</a></li>
+		            <li><a href="#">Potencial Evocado</a></li>
+		            <li><a href="#">Doppler Transcraniano</a></li>
 		          </ul>
 		        </li>
 		        <li><a href="#">Suporte</a></li>
 		        <li><a href="#">Eventos</a></li>
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-		          	Contato
-		          	<span class="caret"></span>
+		          	Contato		          	
 		          </a>
-		          <ul class="dropdown-menu dropdown-menu-left" role="menu">
+		          <ul class="dropdown-menu dropdown-menu-left menu-padrao" role="menu">
 		            <li><a href="#">Fale conosco</a></li>
 		            <li><a href="#">Trabalhe conosco</a></li>
 		          </ul>
 		        </li>
 		        <li>
 			        <form class="navbar-form navbar-right" role="search">
-				        <div class="input-group">
+				        <div class="input-group form-buscar">
 					      <input type="text" class="form-control">
 					      <span class="input-group-btn">
-					        <button class="btn btn-default" type="button">Go!</button>
+					        <button class="btn btn-default btn-find" type="button"><i class="fa fa-search"></i></button>
 					      </span>
 					    </div><!-- /input-group -->
 				   </form>
