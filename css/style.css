@@ -1390,7 +1390,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 750px;
+    width: 1110px;
   }
 }
 .container-fluid {
@@ -6570,6 +6570,8 @@ fieldset[disabled] .form-simples .btn-enivar a.active {
   /* --- header---  */
   header .navbar-nav {
     text-transform: uppercase;
+    font-size: 1.0em;
+    line-height: 1.4em !important;
   }
   header .navbar-default .navbar-nav > .open > a,
   header .navbar-default .navbar-nav > .open > a:hover,
@@ -6579,13 +6581,23 @@ fieldset[disabled] .form-simples .btn-enivar a.active {
     border-left: solid 1px #005596;
   }
   header .menu-padrao {
+    font-size: 1em;
+    line-height: 1.4em;
     border: 0;
     border-radius: 0px;
     box-shadow: none;
     -webkit-box-shadow: none;
-    font-size: 1em;
     border-left: solid 1px #005596;
     text-transform: initial;
+    margin-top: -19px !important;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header .menu-padrao > li:first-child {
+    margin-top: 25px;
+  }
+  header .menu-padrao > li:last-child {
+    margin-bottom: 25px;
   }
   header .menu-padrao > li > a {
     padding: 3px 15px;
@@ -6594,6 +6606,10 @@ fieldset[disabled] .form-simples .btn-enivar a.active {
   }
   header .navbar-default .navbar-collapse .navbar-nav > li {
     margin: 0 0 0 0px ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
   header .navbar-default .container-fluid {
     padding-left: 0;
@@ -6620,6 +6636,21 @@ footer .container-fluid {
 /* Desktop para cima (desktops, 992px and up) */
 @media (min-width: 768px) {
   /* --- header---  */
+  header .navbar-default .navbar-collapse .navbar-nav > li {
+    margin: 0 0 0 -8px;
+  }
+  header .navbar-nav {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    line-height: 1.6em !important;
+  }
+  header .menu-padrao {
+    font-size: 1.2em;
+    line-height: 1.6em;
+  }
+  header .menu-padrao > li > a {
+    line-height: 1.9em;
+  }
   header .navbar-default {
     padding-top: 70px;
   }
@@ -6646,12 +6677,15 @@ footer .container-fluid {
   header .navbar-default {
     padding-top: 70px;
   }
+  header .navbar-default .navbar-collapse .navbar-nav > li {
+    margin: 0 0 0 0px ;
+  }
   header .navbar-default .navbar-collapse .navbar-form {
     width: 170px;
   }
   /* --- .img-destaque-home---  */
   .img-destaque-home .jumbotron {
-    width: 750px;
+    width: 1110px;
     background-size: cover;
     height: 330px;
     padding-left: 12px;
