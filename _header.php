@@ -54,7 +54,7 @@ $(function() {
 		          	Produtos		          	
 		          </a>
 		          <ul class="dropdown-menu dropdown-menu-left menu-padrao" role="menu">
-		            <li><a href="#">Eletroencefalografia</a></li>
+		            <li><a href="catalogo.php">Eletroencefalografia</a></li>
 		            <li><a href="#">Eletromiografia</a></li>
 		            <li><a href="#">Polissonografia</a></li>
 		            <li><a href="#">Potencial Evocado</a></li>
