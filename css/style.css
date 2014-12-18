@@ -1380,15 +1380,15 @@ pre code {
 }
 @media (min-width: 481px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 @media (min-width: 768px) {
   .container {
-    width: 720px;
+    width: 768px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .container {
     width: 1080px;
   }
@@ -1881,7 +1881,7 @@ pre code {
     margin-left: 0%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
   }
@@ -6159,7 +6159,7 @@ button.close {
     display: inline-block !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .visible-md {
     display: block !important;
   }
@@ -6174,22 +6174,22 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .visible-md-block {
     display: block !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .visible-md-inline {
     display: inline !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .visible-md-inline-block {
     display: inline-block !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .visible-lg {
     display: block !important;
   }
@@ -6204,17 +6204,17 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .visible-lg-block {
     display: block !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .visible-lg-inline {
     display: inline !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .visible-lg-inline-block {
     display: inline-block !important;
   }
@@ -6229,12 +6229,12 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .hidden-md {
     display: none !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .hidden-lg {
     display: none !important;
   }
@@ -6288,6 +6288,7 @@ button.close {
 }
 body {
   font-family: "Lato";
+  border-top: solid 5px #54bceb;
 }
 .container {
   padding-left: 0px;
@@ -6641,10 +6642,10 @@ footer .sessao-footer .titulo-footer {
   background-color: transparent;
   border-radius: 0px;
   margin-bottom: 0px;
-  background-image: url('../img/dotores.jpg');
+  background-image: url('../img/lgm/banner-home-480x150.png');
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 180px;
+  height: 150px;
   margin-right: auto;
   margin-left: auto;
   width: 100%;
@@ -6757,6 +6758,9 @@ footer .sessao-footer .titulo-footer {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.biomed-logo {
+  content: url("../img/lgm/biomed-logo-480.png");
+}
 @media (max-width: 480px) {
   .row {
     margin-left: 0px;
@@ -6826,9 +6830,8 @@ footer .sessao-footer .titulo-footer {
     border-radius: 0px;
   }
   .img-destaque-home .jumbotron {
-    width: 450px;
+    width: 480px;
     background-size: cover;
-    height: 330px;
   }
 }
 .lista-modelos .texto-descritivo-modelo p {
@@ -6843,7 +6846,7 @@ footer .container-fluid {
 }
 @media (min-width: 768px) {
   header .navbar-default .navbar-collapse .navbar-nav > li {
-    margin: 0 0 0 -12px;
+    margin: 0 0 0 0;
   }
   header .navbar-nav {
     text-transform: uppercase;
@@ -6857,16 +6860,14 @@ footer .container-fluid {
   header .menu-padrao > li > a {
     line-height: 1.9em;
   }
-  header .navbar-default {
-    padding-top: 70px;
-  }
   header .navbar-default .navbar-collapse .navbar-form {
     width: 170px;
   }
   .img-destaque-home .jumbotron {
-    width: 720px;
+    background-image: url('../img/lgm/banner-home-768x200.png');
+    width: 768px;
     background-size: cover;
-    height: 330px;
+    height: 200px;
   }
   .form-simples .campo {
     text-align: right;
@@ -6874,30 +6875,44 @@ footer .container-fluid {
   .form-simples .btn-enivar {
     text-align: left;
   }
+  .biomed-logo {
+    content: url("../img/lgm/biomed-logo-768.png");
+  }
 }
-@media (min-width: 1200px) {
-  header .navbar-default {
-    padding-top: 70px;
+@media (min-width: 1201px) {
+  .navbar {
+    min-height: 145px;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .navbar > .container-fluid {
+    margin-top: 100px;
   }
   header .navbar-default .navbar-collapse .navbar-nav {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.6em;
+    margin-top: 25px;
   }
   header .navbar-default .navbar-collapse .navbar-nav > li {
-    margin: 0 0 0 3.4px;
+    margin: 0 0 0 3px;
   }
   header .navbar-default .navbar-collapse .navbar-form {
-    width: 170px;
+    width: 240px;
+    margin-top: -7px;
   }
   header .menu-padrao {
     font-size: 1em;
     line-height: 1.4em;
   }
   .img-destaque-home .jumbotron {
+    background-image: url('../img/lgm/banner-home-1080x285.png');
     width: 1080px;
     background-size: cover;
-    height: 330px;
+    height: 285px;
     padding-left: 12px;
     padding-right: 15px;
+  }
+  .biomed-logo {
+    content: url("../img/lgm/biomed-logo-1200.png");
   }
 }

@@ -2,6 +2,11 @@
 @border-radius-menu: 0px;
 body {
 	font-family: @font-lato;
+	border-top: solid 5px @azul-claro;
+}
+
+header.container{
+	
 }
 
 .container {
@@ -122,10 +127,10 @@ footer {
 		background-color: transparent;
 		border-radius: 0px;
 		margin-bottom: 0px;
-		background-image: url('../img/dotores.jpg');
+		background-image: url('../img/lgm/banner-home-480x150.png');
 		background-size: 100%;
 		background-repeat: no-repeat;
-		height: 180px;
+		height: 150px;
 		margin-right: auto;
 		margin-left: auto;
 		width: 100%;
@@ -262,6 +267,10 @@ footer {
 	margin-bottom: 40px;
 }
 
+.biomed-logo{
+		content:url("../img/lgm/biomed-logo-480.png");
+	}
+
 @media (max-width: @screen-xs-max) {
 	.row {
 		margin-left: 0px;
@@ -358,7 +367,7 @@ footer {
 		.jumbotron {
 			width: @container-sm;
 			background-size: cover;
-			height: 330px;
+			//height: 330px;
 		}
 	}
 }
@@ -411,12 +420,19 @@ footer {
 }
 
 @media (min-width: @screen-md-min) {
+	
+	.img-destaque-home {
+		.jumbotron {
+			
+		}
+	}
+	
 	header {
 		.navbar-default {
 			.navbar-collapse {
 				.navbar-nav {
 					& > li {
-						margin: 0 0 0 -12px;
+						margin: 0 0 0 0;
 					}
 				}
 			}
@@ -439,7 +455,7 @@ footer {
 		}
 
 		.navbar-default {
-			padding-top: 70px;
+			//
 			.navbar-collapse {
 				.navbar-form {
 					width: 170px;
@@ -450,9 +466,10 @@ footer {
 
 	.img-destaque-home {
 		.jumbotron {
+			background-image: url('../img/lgm/banner-home-768x200.png');
 			width: @container-md;
 			background-size: cover;
-			height: 330px;
+			height: 200px;
 		}
 	}
 
@@ -465,25 +482,47 @@ footer {
 			.text-left;
 		}
 	}
+	
+	.biomed-logo{
+		content:url("../img/lgm/biomed-logo-768.png");
+	}
+	
 }
 
 @media (min-width: @screen-lg-min) {
-	header {
+	
+	 
+	
+	.navbar {
+		min-height: 145px;
+		margin-bottom: 25px;
+		position: relative;
+		
+		& > .container-fluid{
+			margin-top: 100px;
+		}
+	}
+	
+	header {		
 		.navbar-default {
-			padding-top: 70px;
+			//
 			.navbar-collapse {
+				
+				
 				.navbar-nav {
-					font-size: 1.2em;
+					font-size: 1em;
 					line-height: 1.6em;
+					margin-top: 25px;
 					& > li {
-						margin: 0 0 0 3.4px;
+						margin: 0 0 0 3px;
 					}
 				}
 			}
 
 			.navbar-collapse {
 				.navbar-form {
-					width: 170px;
+					width: 240px;
+					margin-top: -7px;
 				}
 			}
 		}
@@ -496,12 +535,20 @@ footer {
 
 	.img-destaque-home {
 		.jumbotron {
+			background-image: url('../img/lgm/banner-home-1080x285.png');
 			width: @container-lg;
 			background-size: cover;
-			height: 330px;
+			height: 285px;
 			padding-left: @padding-base-horizontal;
 			padding-right: 15px;
 		}
 	}
+	
+	
+	.biomed-logo{
+		content:url("../img/lgm/biomed-logo-1200.png");
+	
+	}
+	
 }
 

@@ -41,7 +41,9 @@ $(function() {
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="index.php">Biomed</a>
+		      <a class="navbar-brand" href="index.php">
+		      	<img alt="Biomed" class="biomed-logo" >
+		      </a>
 		    </div>
 		
 		    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,7 +77,7 @@ $(function() {
 		        <li>
 			        <form class="navbar-form navbar-right" role="search">
 				        <div class="input-group form-buscar">
-					      <input type="text" class="form-control">
+					      <input type="text" class="form-control" placeholder="Faça aqui sua busca">
 					      <span class="input-group-btn">
 					        <button class="btn btn-default btn-find" type="button"><i class="fa fa-search"></i></button>
 					      </span>
