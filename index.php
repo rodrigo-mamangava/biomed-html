@@ -36,13 +36,13 @@
 	<div class="divisoria-tipo-01 container-fluid">
 		<div class="row">
 		
-			<div class="col-xs-4 col-md-5 col-esq">
+			<div class="col-xs-4 col-md-4 col-esq">
 				<p><hr></p>
 			</div>
-			<div class="col-xs-4 col-md-2">
+			<div class="col-xs-4 col-md-4">
 				<p> Produtos em destaque</p>
 			</div>
-			<div class="col-xs-4 col-md-5 col-dir">
+			<div class="col-xs-4 col-md-4 col-dir">
 				<p><hr></p>
 			</div>
 		
@@ -113,6 +113,14 @@
 			<!-- row -->
 	
 	</div><!-- /vitrine-tipo-home -->
+	
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-xm-12 passador">
+		&#60; PASSADOR &#62;
+		</div>
+		</div>
+	</div>
 	
 	<div class="container-fluid">
 		<div class="row">

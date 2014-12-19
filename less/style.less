@@ -5,8 +5,7 @@ body {
 	border-top: solid 5px @azul-claro;
 }
 
-header.container{
-	
+header.container {
 }
 
 .container {
@@ -14,10 +13,102 @@ header.container{
 	padding-right: 0px;
 }
 
+h1, .h1, h2, .h2, h3, .h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h2{
+	font-size: 1.7em;
+	color: @azul-claro;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+h3{
+	font-size: 1.3em;
+	line-height: 1.6em;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+p{
+	font-size: 1.3em;
+	color: @cinza-escuro	;
+}
+
+
+p {
+	margin: 0;
+}
+
 hr {
-	margin-top: 0px;
+	margin-top: 10px;
 	margin-bottom: 0px;
-	border-top: 1px solid @cinza-claro;
+	border-top: 1px solid @cinza-escuro;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: @cinza-medio;
+  outline: 0;
+  outline: 0;
+  /* IE6-9 */
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+	.form-simples {
+		.campo {			
+			input{
+				margin-top: 10px;
+			}			
+		}
+
+		.btn-enivar {
+				margin-top: 6.1px;			
+		}
+		
+		::-webkit-input-placeholder {
+		 font-size: 1.7em;
+		}
+		:-moz-placeholder { /* older Firefox*/
+		 font-size:1.7em;
+		}
+		::-moz-placeholder { /* Firefox 19+ */ 
+		 font-size: 1.7em;
+		} 
+		:-ms-input-placeholder { 
+		 font-size: 1.7em; 
+		}
+		
+		
+	}
+
+
+
+
+
+.passador{
+	.center-block;
+	.text-center;
 }
 
 .navbar-collapse {
@@ -34,6 +125,10 @@ hr {
 		transparent;
 		white);
 		border-radius: 0px;
+		border-right: 0;
+		border-left: 0;
+		font-size: 1.7em;
+		width: 300px;
 	}
 }
 
@@ -110,10 +205,12 @@ header {
 }
 
 footer {
-	margin-top: 40px;
-	padding-top: 40px;
+	margin-top: 65px;
+	padding-top: 55px;
 	border-top: solid 1px black;
 	background-color: @cinza-claro;
+	font-size: 1.1em;
+	line-height: 1.8em;
 	.sessao-footer {
 		.titulo-footer {
 			border-bottom: solid 1px;
@@ -138,11 +235,13 @@ footer {
 }
 
 .divisoria-tipo-01 {
-	margin-top: 40px;
-	margin-bottom: 80px;
+	margin-top: 90px;
+	margin-bottom: 60px;
 	p {
 		.text-uppercase;
 		.text-center;
+		font-size: 1.2em;
+		
 	}
 
 	.col-esq {
@@ -160,6 +259,8 @@ footer {
 
 .vitrine-tipo-home {
 	.text-center;
+	padding-top: 30px;
+	margin-bottom: 40px;
 	.carousel {
 		.carousel-inner {
 			.item {
@@ -180,28 +281,62 @@ footer {
 
 	.thumbnail {
 		border: 0;
+		margin-bottom: 0px;
 		img {
-			height: 100px;
+			height: 160px;
+			width: 242px;
 		}
 	}
 }
 
 .titulo-form-simples {
 	.text-center;
-	font-size: 2em;
+	margin-top: 90px;
+	margin-bottom: 40px;
+	
+	p{
+		font-size: 2.6em;
+		line-height: 1.1em;
+	}
+		
 }
 
 .form-simples {
 	background-color: @azul-claro;
 	vertical-align: middle;
-	padding: 3px 4px;
+	min-height: 60px;
 	.text-center;
+	
+	.form-simples {
+		.campo {
+			.text-right;
+			
+			input{
+//				margin-top: 15px;
+				
+			}			
+		}
+
+		.btn-enivar {
+			.text-left;
+		}
+	}
+	
+	
 	.campo {
 		input {
-			padding: 5px 10px;
+//			padding: 5px 10px;
 			background-color: transparent;
 			border: 0;
-			.placeholder (white)
+			width: 265px;
+			height: 40px;
+			color: white;
+			.placeholder (white);
+			input::-webkit-input-placeholder { font-size: 1.7em; }
+			input::-moz-placeholder { font-size: 1.7em; }
+			input:-ms-input-placeholder { font-size: 1.7em; }
+			input:-moz-placeholder { font-size: 1.7em }
+			line-height: 1.8em;
 		}
 	}
 }
@@ -267,9 +402,9 @@ footer {
 	margin-bottom: 40px;
 }
 
-.biomed-logo{
-		content:url("../img/lgm/biomed-logo-480.png");
-	}
+.biomed-logo {
+	content: url("../img/lgm/biomed-logo-480.png");
+}
 
 @media (max-width: @screen-xs-max) {
 	.row {
@@ -367,11 +502,9 @@ footer {
 		.jumbotron {
 			width: @container-sm;
 			background-size: cover;
-			//height: 330px;
 		}
 	}
 }
-
 
 .menu-lateral {
 	.lista-menu {
@@ -420,13 +553,11 @@ footer {
 }
 
 @media (min-width: @screen-md-min) {
-	
 	.img-destaque-home {
 		.jumbotron {
-			
 		}
 	}
-	
+
 	header {
 		.navbar-default {
 			.navbar-collapse {
@@ -455,7 +586,6 @@ footer {
 		}
 
 		.navbar-default {
-			//
 			.navbar-collapse {
 				.navbar-form {
 					width: 170px;
@@ -482,33 +612,25 @@ footer {
 			.text-left;
 		}
 	}
-	
-	.biomed-logo{
-		content:url("../img/lgm/biomed-logo-768.png");
+
+	.biomed-logo {
+		content: url("../img/lgm/biomed-logo-768.png");
 	}
-	
 }
 
 @media (min-width: @screen-lg-min) {
-	
-	 
-	
 	.navbar {
 		min-height: 145px;
-		margin-bottom: 25px;
+		margin-bottom: 33px;
 		position: relative;
-		
-		& > .container-fluid{
+		& > .container-fluid {
 			margin-top: 100px;
 		}
 	}
-	
-	header {		
+
+	header {
 		.navbar-default {
-			//
 			.navbar-collapse {
-				
-				
 				.navbar-nav {
 					font-size: 1em;
 					line-height: 1.6em;
@@ -543,12 +665,9 @@ footer {
 			padding-right: 15px;
 		}
 	}
-	
-	
-	.biomed-logo{
-		content:url("../img/lgm/biomed-logo-1200.png");
-	
+
+	.biomed-logo {
+		content: url("../img/lgm/biomed-logo-1200.png");
 	}
-	
 }
 

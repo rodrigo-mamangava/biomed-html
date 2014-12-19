@@ -2357,10 +2357,10 @@ output {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
-  border-color: #66afe9;
+  border-color: #a7a7a7;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(167, 167, 167, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(167, 167, 167, 0.6);
 }
 .form-control::-moz-placeholder {
   color: #999999;
@@ -6294,10 +6294,88 @@ body {
   padding-left: 0px;
   padding-right: 0px;
 }
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 1.7em;
+  color: #54bceb;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 1.3em;
+  line-height: 1.6em;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+p {
+  font-size: 1.3em;
+  color: #a7a7a7;
+}
+p {
+  margin: 0;
+}
 hr {
-  margin-top: 0px;
+  margin-top: 10px;
   margin-bottom: 0px;
-  border-top: 1px solid #fbfbfb;
+  border-top: 1px solid #a7a7a7;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: #dcdcdc;
+  outline: 0;
+  /* IE6-9 */
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.form-simples .campo input {
+  margin-top: 10px;
+}
+.form-simples .btn-enivar {
+  margin-top: 6.1px;
+}
+.form-simples ::-webkit-input-placeholder {
+  font-size: 1.7em;
+}
+.form-simples :-moz-placeholder {
+  /* older Firefox*/
+  font-size: 1.7em;
+}
+.form-simples ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 1.7em;
+}
+.form-simples :-ms-input-placeholder {
+  font-size: 1.7em;
+}
+.passador {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 .navbar-collapse .navbar-form {
   width: 100%;
@@ -6329,6 +6407,10 @@ hr {
   background-color: transparent;
   border-color: #ffffff;
   border-radius: 0px;
+  border-right: 0;
+  border-left: 0;
+  font-size: 1.7em;
+  width: 300px;
 }
 .btn-enivar a:focus,
 .btn-enivar a:active:focus,
@@ -6627,10 +6709,12 @@ header .form-buscar .btn-find {
   padding-left: 0px;
 }
 footer {
-  margin-top: 40px;
-  padding-top: 40px;
+  margin-top: 65px;
+  padding-top: 55px;
   border-top: solid 1px black;
   background-color: #fbfbfb;
+  font-size: 1.1em;
+  line-height: 1.8em;
 }
 footer .sessao-footer .titulo-footer {
   border-bottom: solid 1px;
@@ -6651,12 +6735,13 @@ footer .sessao-footer .titulo-footer {
   width: 100%;
 }
 .divisoria-tipo-01 {
-  margin-top: 40px;
-  margin-bottom: 80px;
+  margin-top: 90px;
+  margin-bottom: 60px;
 }
 .divisoria-tipo-01 p {
   text-transform: uppercase;
   text-align: center;
+  font-size: 1.2em;
 }
 .divisoria-tipo-01 .col-esq {
   border-right: solid 1px #fbfbfb;
@@ -6670,6 +6755,8 @@ footer .sessao-footer .titulo-footer {
 }
 .vitrine-tipo-home {
   text-align: center;
+  padding-top: 30px;
+  margin-bottom: 40px;
 }
 .vitrine-tipo-home .carousel .carousel-control {
   background-image: none;
@@ -6682,24 +6769,40 @@ footer .sessao-footer .titulo-footer {
 }
 .vitrine-tipo-home .thumbnail {
   border: 0;
+  margin-bottom: 0px;
 }
 .vitrine-tipo-home .thumbnail img {
-  height: 100px;
+  height: 160px;
+  width: 242px;
 }
 .titulo-form-simples {
   text-align: center;
-  font-size: 2em;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+.titulo-form-simples p {
+  font-size: 2.6em;
+  line-height: 1.1em;
 }
 .form-simples {
   background-color: #54bceb;
   vertical-align: middle;
-  padding: 3px 4px;
+  min-height: 60px;
   text-align: center;
 }
+.form-simples .form-simples .campo {
+  text-align: right;
+}
+.form-simples .form-simples .btn-enivar {
+  text-align: left;
+}
 .form-simples .campo input {
-  padding: 5px 10px;
   background-color: transparent;
   border: 0;
+  width: 265px;
+  height: 40px;
+  color: white;
+  line-height: 1.8em;
 }
 .form-simples .campo input::-moz-placeholder {
   color: #ffffff;
@@ -6710,6 +6813,18 @@ footer .sessao-footer .titulo-footer {
 }
 .form-simples .campo input::-webkit-input-placeholder {
   color: #ffffff;
+}
+.form-simples .campo input input::-webkit-input-placeholder {
+  font-size: 1.7em;
+}
+.form-simples .campo input input::-moz-placeholder {
+  font-size: 1.7em;
+}
+.form-simples .campo input input:-ms-input-placeholder {
+  font-size: 1.7em;
+}
+.form-simples .campo input input:-moz-placeholder {
+  font-size: 1.7em;
 }
 .vitrine-parceiros {
   display: block;
@@ -6882,7 +6997,7 @@ footer .container-fluid {
 @media (min-width: 1201px) {
   .navbar {
     min-height: 145px;
-    margin-bottom: 25px;
+    margin-bottom: 33px;
     position: relative;
   }
   .navbar > .container-fluid {
