@@ -6299,7 +6299,8 @@ h1,
 h2,
 .h2,
 h3,
-.h3 {
+.h3,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -6315,13 +6316,12 @@ h3 {
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 15px;
+  color: #54bceb;
 }
 p {
   font-size: 1.3em;
   color: #a7a7a7;
-}
-p {
-  margin: 0;
+  line-height: 1.7em;
 }
 hr {
   margin-top: 10px;
@@ -6719,6 +6719,9 @@ footer {
 }
 footer .sessao-footer .titulo-footer {
   border-bottom: solid 1px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 .img-destaque-home {
   background-color: #fbfbfb;
@@ -6771,6 +6774,7 @@ footer .sessao-footer .titulo-footer {
 .vitrine-tipo-home .thumbnail {
   border: 0;
   margin-bottom: 0px;
+  padding: 0 2px;
 }
 .vitrine-tipo-home .thumbnail img {
   height: 160px;
