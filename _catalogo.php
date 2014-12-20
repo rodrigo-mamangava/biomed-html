@@ -5,20 +5,40 @@
 	<aside class="menu-lateral col-md-3">
 
 		<div class="lista-menu exame">
-
 			<p>Equipamento</p>
-			<p>
-				<input type="text" ng-model="equip.nome">
-			</p>
+
+			<ul>
+				<li>Exame 01</li>
+				<li>Exame 02</li>
+				<li>Exame 03</li>
+			</ul>
+			
 		</div>
 		<!-- exame -->
 
 		<div class="lista-menu produto">
+		
+			<p>Equipamento</p>
+			<p>
+				<input type="text" ng-model="equip.nome" placeholder="Nome equipamento">
+			</p>
+			<ul>
+				<li>Eletroencefalografia</li>
+				<li>Eletroencefalografia</li>
+				<li>Eletroencefalografia</li>
+			</ul>
+		
+		
 			<p>Acessório</p>
 			<p>
-				<input type="text" ng-model="acess.nome">
+				<input type="text" ng-model="acess.nome" placeholder="Nome acessório">
 			</p>
-				</div>
+			<ul>
+				<li>Eletroencefalografia</li>
+				<li>Eletroencefalografia</li>
+				<li>Eletroencefalografia</li>
+			</ul>
+		</div>
 		<!-- produto -->
 
 
@@ -44,10 +64,10 @@
 
 			<h3 class="titulo-lista">Equipamentos</h3>
 
-			<div ng-repeat="produto in produtos | filter:equip">
+			<div ng-repeat="(key, produto) in produtos | filter:equip">
 
 				<div ng-if="produto.tipo== 'equipamento' ">
-
+				
 					<div class="item-equip row">
 						<div class="foto-equip col-sm-12 col-md-3 ">
 							<img alt="{{produto.nome}}" ng-src="{{produto.foto}}"
@@ -74,7 +94,7 @@
 		<div class="vitrine-acess">
 			<h3 class="titulo-lista">Acessórios</h3>
 			<div class="linha-acess row">
-				<div ng-repeat="produto in produtos | filter:acess">
+				<div ng-repeat="(key, produto) in produtos | filter:acess">
 					<div ng-if="produto.tipo== 'acessorio' ">
 						<div class="item-acess col-md-4">
 							<a href="acessorio.php"> <img alt="{{produto.nome}}"
