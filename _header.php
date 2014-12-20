@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html  ng-app="myApp">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="language" content="pt-br" />
@@ -12,19 +12,8 @@
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src=></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
 
-<script type="text/javascript">
-$(function() {
-	  // Handler for .ready() called.
-
-	  
-	$('.carousel').carousel({
-	  interval: 0
-	})
-	  
-	});
-</script>
 
 <title>BIOMED HTML</title>
 </head>

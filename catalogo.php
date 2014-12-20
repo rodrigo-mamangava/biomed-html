@@ -5,11 +5,6 @@
 <div class="container">
 
 	<div class="row">
-
-	<?php include '_aside.php';?>
-	
-	
-	<div class="separador col-md-1"></div><!-- separador -->
 	
 	<?php include '_catalogo.php';?>
 
