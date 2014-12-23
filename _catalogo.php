@@ -1,5 +1,3 @@
-<script type="text/javascript" src="js/controller/controllerProduto.js"></script>
-
 <div ng-controller="produtoController">
 
 	<aside class="menu-lateral col-md-3">

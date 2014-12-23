@@ -14,6 +14,8 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/angular.min.js"></script>
 
+<script type="text/javascript" src="js/controller/controllerProduto.js"></script>
+
 
 <title>BIOMED HTML</title>
 </head>
@@ -21,6 +23,7 @@
 
 	<header class="container">
 		<nav class="navbar navbar-default " role="navigation">
+		<div ng-controller="menuController">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -44,13 +47,14 @@
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 		          	Produtos		          	
 		          </a>
-		          <ul class="dropdown-menu dropdown-menu-left menu-padrao" role="menu">
-		            <li><a href="catalogo.php">Eletroencefalografia</a></li>
-		            <li><a href="#">Eletromiografia</a></li>
-		            <li><a href="#">Polissonografia</a></li>
-		            <li><a href="#">Potencial Evocado</a></li>
-		            <li><a href="#">Doppler Transcraniano</a></li>
-		          </ul>
+		          
+		          <ul class="dropdown-menu dropdown-menu-left menu-padrao" role="menu">					
+		            	<div ng-repeat="item in menu" >
+		            	
+			            	<li><a href=catalogo.php?exame={{item.url}}>{{item.nome}}</a></li>		            
+		            	
+		            	</div>		          	
+		          </ul>		          
 		        </li>
 		        <li><a href="#">Suporte</a></li>
 		        <li><a href="#">Eventos</a></li>
@@ -76,6 +80,7 @@
 		      </ul>	      
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
+		  </div>
 		</nav><!-- /nav -->
 		
 	</header> <!-- /header -->
