@@ -6680,6 +6680,9 @@ fieldset[disabled] .btn-orcamento.active {
   color: transparent;
   background-color: #54bceb;
 }
+.navbar {
+  padding-top: 5px;
+}
 header .navbar-nav > li {
   z-index: 2;
 }
@@ -6970,8 +6973,11 @@ footer .container-fluid {
   padding-right: 0;
 }
 @media (min-width: 768px) {
+  .navbar {
+    padding-top: 80px;
+  }
   header .navbar-default .navbar-collapse .navbar-nav > li {
-    margin: 0 0 0 0;
+    margin: 0 0 0 -15px;
   }
   header .navbar-nav {
     text-transform: uppercase;
@@ -6987,6 +6993,7 @@ footer .container-fluid {
   }
   header .navbar-default .navbar-collapse .navbar-form {
     width: 170px;
+    margin-top: -7px;
   }
   .img-destaque-home .jumbotron {
     background-image: url('../img/lgm/banner-home-768x200.png');
