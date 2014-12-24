@@ -1,4 +1,4 @@
-<?php include '_header.php';?>
+<?php include 'inc/_header.php';?>
 
 
 	<div class="img-destaque-home container-fluid">
@@ -185,4 +185,4 @@
 	<!-- /vitrine-parceiros -->
 
 	
-<?php include '_footer.php';?>
+<?php include 'inc/_footer.php';?>

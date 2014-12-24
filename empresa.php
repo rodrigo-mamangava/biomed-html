@@ -1,6 +1,6 @@
-<?php include '_header.php';?>
+<?php include 'inc/_header.php';?>
 
-<?php include '_barra-local.php';?>
+<?php include 'inc/_barra-local.php';?>
 
 
 <div class="box-03-titulo container">
@@ -151,4 +151,4 @@
 	
 </div><!-- /box-02 -->
 
-<?php include '_footer.php';?>
+<?php include 'inc/_footer.php';?>
