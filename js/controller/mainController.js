@@ -15,6 +15,8 @@ myNameSpace.controller(
 		$http.get(page).success(function(response) {
 			$scope.produtos = response;	
 		});
+		
+		
 
 });
 
