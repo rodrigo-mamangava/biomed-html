@@ -20,14 +20,15 @@ h1, .h1, h2, .h2, h3, .h3, p {
 
 h2{
 	font-size: 1.7em;
+	line-height: 1.4em;
 	color: @azul-claro;
 	margin-top: 40px;
 	margin-bottom: 20px;
 }
 
 h3{
-	font-size: 1.3em;
-	line-height: 1.6em;
+	font-size: 1.1em;
+	line-height: 1.5em;
 	font-weight: bold;
 	margin-top: 20px;
 	margin-bottom: 15px;
@@ -127,8 +128,10 @@ input[type="color"]:focus,
 		border-radius: 0px;
 		border-right: 0;
 		border-left: 0;
-		font-size: 1.7em;
+		font-size: 1em;
+		line-height: 1.4em;
 		width: 300px;
+		margin-top: 10px;
 	}
 }
 
@@ -191,12 +194,25 @@ header {
 }
 
 .barra-local {
+	border-bottom: solid 1px @cinza-escuro;
+	color: @azul-claro;
+	h1{
+		margin-top: 0px;
+		margin-bottom: 25px;
+		font-size: 1.7em;
+		line-height: 1.4em;
+	}
 	.nome-pagina {
 		.text-left;
 	}
 
 	.migalha {
 		.text-right;
+		p{
+			color: @azul-claro;
+			font-size: 0.9em;
+			line-height: 1.6em;			
+		}
 	}
 }
 
@@ -221,8 +237,8 @@ footer {
 	padding-bottom: 55px;
 	border-top: solid 1px black;
 	background-color: @cinza-claro;
-	font-size: 1.1em;
-	line-height: 1.8em;
+	font-size: 0.9em;
+	line-height: 1.6em;
 	.sessao-footer {
 		.titulo-footer {
 			border-bottom: solid 1px;
@@ -256,6 +272,7 @@ footer {
 		.text-uppercase;
 		.text-center;
 		font-size: 1.2em;
+		line-height:1.4em;
 		
 	}
 
@@ -311,8 +328,8 @@ footer {
 	margin-bottom: 40px;
 	
 	p{
-		font-size: 2.6em;
-		line-height: 1.1em;
+		font-size: 2.7em;
+		line-height: 1.3em;
 	}
 		
 }
@@ -352,12 +369,14 @@ footer {
 			input::-moz-placeholder { font-size: 1.7em; }
 			input:-ms-input-placeholder { font-size: 1.7em; }
 			input:-moz-placeholder { font-size: 1.7em }
-			line-height: 1.8em;
+			line-height: 1.4em;
+			font-size: 1.7em;
 		}
 	}
 }
 
 .vitrine-parceiros {
+	padding-top: 5px;
 	.center-block;
 	.text-center;
 	img.logo-parceiros {
@@ -366,28 +385,48 @@ footer {
 }
 
 .barra-local {
-	color: @azul-claro;
 	vertical-align: text-bottom;
 	h1 {
 		.text-left;
-		margin-top: 0px;
-		margin-bottom: 0px;
 	}
 
-	p {
+	.migalha p {
 		.text-right;
-		margin: 17px 0 0;
+		margin: 9px 0 0;
+
+		
+	}
+}
+
+.h4-interno{
+	color: @azul-escuro;
+	font-size: 1.7em;
+}
+
+
+.box-02-titulo{
+	margin-top: 80px;
+	margin-bottom: 80px;
+	.texto-box-02{
+		h4{
+			.h4-interno;
+		}
 	}
 }
 
 .box-03-titulo {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 80px;
+	margin-bottom: 80px;
 	.titulo-box-03 {
 		.text-center;
 		margin-bottom: 40px;
 		h3 {
 			color: @laranja;
+			font-size: 2.7em;
+			line-height: 1.3em;
+			margin-top: 0;
+
+			
 		}
 	}
 
@@ -400,12 +439,14 @@ footer {
 .mapa-suporte-tec {
 	margin-top: 40px;
 	margin-bottom: 40px;
-	.lista {
+	.lista-hospital {
+		padding-top: 10px;
 		.nome-estado {
 			.text-capitalize;
-			color: @azul-claro;
+			color: @azul-escuro;
 			border-top: solid black 1px;
 			border-bottom: solid black 1px;
+			line-height: 1.5em;
 		}
 
 		.local {
@@ -655,9 +696,10 @@ footer {
 @media (min-width: @screen-lg-min) {
 	.navbar {
 		min-height: 145px;
-		margin-bottom: 33px;
-		padding-top: 80px;
+		margin-bottom: 38px;
+		padding-top: 100px;
 		position: relative;
+
 		& > .container-fluid {
 			margin-top: 100px;
 		}
@@ -668,10 +710,10 @@ footer {
 			.navbar-collapse {
 				.navbar-nav {
 					font-size: 1em;
-					line-height: 1.6em;
+					line-height: 1.4em;
 					margin-top: 25px;
 					& > li {
-						margin: 0 0 0 3px;
+						margin: 0 0 0 15px;
 					}
 				}
 			}

@@ -11,30 +11,62 @@
 	</div>
 	<div class="row texto-box-03">
 		<div class="col-sm-4">
+		<p>
 			In posuere dictum diam sed pretium. 
 			Donec ac aliquet justo. Nullam dictum maximus nibh, vitae interdum enim tempus tristique. 
 			Nullam sed erat nulla. Etiam quis dui ac felis vehicula ornare.
+		</p>
 		</div>
 		<div class="col-sm-4">
+			<p>
 			Pellentesque id arcu purus. 
 			Aliquam erat volutpat. Duis viverra porta nisl in porta. 
 			Sed quis lacus vitae massa facilisis euismod et et dui. 
 			Nunc tincidunt, quam id semper iaculis, dui justo posuere dui, hendrerit lacinia ligula lectus quis ex. 
 			Donec vehicula magna eget mi molestie auctor.
+			</p>
 		</div>
 		<div class="col-sm-4">
+			<p>
 			Vestibulum lobortis odio non cursus molestie. 
 			Quisque consectetur libero sapien, at feugiat arcu cursus sit amet. 
 			Curabitur eros nisi, rutrum ornare elementum vitae, malesuada eu metus.
+			</p>
 		</div>
 	</div>
 </div><!-- /box-03-titulo -->
+
+<div class="box-02-titulo container">
+	<div class="row texto-box-02">
+		<div class="col-sm-6">
+			<h4 class="h4-interno">Nossa missão</h3>
+			<p>
+			In posuere dictum diam sed pretium. 
+			Donec ac aliquet justo. Nullam dictum maximus nibh, vitae interdum enim tempus tristique. 
+			Nullam sed erat nulla. Etiam quis dui ac felis vehicula ornare.
+			<p>
+		</div>
+		<div class="col-sm-6">
+			<h4 class="h4-interno">Nossos produtos</h3>
+			<p>
+			Pellentesque id arcu purus. 
+			Aliquam erat volutpat. Duis viverra porta nisl in porta. 
+			Sed quis lacus vitae massa facilisis euismod et et dui. 
+			Nunc tincidunt, quam id semper iaculis, dui justo posuere dui, hendrerit lacinia ligula lectus quis ex. 
+			Donec vehicula magna eget mi molestie auctor.
+			</p>
+		</div>
+	</div>
+
+</div><!-- /box-02-titulo -->
+
+
 
 
 <div class="mapa-suporte-tec container">
 	<div class="row">
 		<div class="col-sm-6">
-			<h4>Suporte técnico</h4>
+			<h4 class="h4-interno">Suporte técnico</h4>
 			<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 			Integer ac dui ultricies, ultrices diam a, facilisis risus. 
@@ -50,7 +82,7 @@
 			<img alt="Mapa do suporte técnico" src="img/mapa.PNG" class="img-rounded" width="100%">
 			
 		</div>
-		<div class="col-sm-6 lista">
+		<div class="col-sm-6 lista-hospital">
 			<div class="col-sm-6">
 				<p class="nome-estado">Rio de Janeiro</p>
 				<p class="local">Local 01</p>
@@ -127,28 +159,5 @@
 	</div><!-- row -->
 </div><!-- /mapa-suporte-tec -->
 
-<div class="box-02 container">
-	<div class="row">
-		<div class="col-sm-6">
-			<h4>Nossa Missão</h4>
-			<p>
-				Mauris pretium massa augue, quis dapibus erat interdum ac. 
-				Fusce blandit, metus eget hendrerit venenatis, 
-				dui lectus porta lorem, tempor malesuada ex massa sed erat. 
-				Phasellus eu magna ac enim ultrices molestie. 
-			</p>
-		</div>
-		<div class="col-sm-6">
-			<h4>Nossos produtos</h4>
-			<p>
-				Mauris pretium massa augue, quis dapibus erat interdum ac. 
-				Fusce blandit, metus eget hendrerit venenatis, 
-				dui lectus porta lorem, tempor malesuada ex massa sed erat. 
-				Phasellus eu magna ac enim ultrices molestie.
-			</p>
-		</div>
-	</div><!-- row -->
-	
-</div><!-- /box-02 -->
 
 <?php include 'inc/_footer.php';?>

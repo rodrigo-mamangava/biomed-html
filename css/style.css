@@ -5938,7 +5938,7 @@ button.close {
   height: 10px;
   margin: 1px;
   text-indent: -999px;
-  border: 1px solid #808080;
+  border: 1px solid gray;
   border-radius: 10px;
   cursor: pointer;
   background-color: #000 \9;
@@ -5948,7 +5948,7 @@ button.close {
   margin: 0;
   width: 12px;
   height: 12px;
-  background-color: #000000;
+  background-color: black;
 }
 .carousel-caption {
   position: absolute;
@@ -6306,13 +6306,14 @@ p {
 }
 h2 {
   font-size: 1.7em;
+  line-height: 1.4em;
   color: #54bceb;
   margin-top: 40px;
   margin-bottom: 20px;
 }
 h3 {
-  font-size: 1.3em;
-  line-height: 1.6em;
+  font-size: 1.1em;
+  line-height: 1.5em;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 15px;
@@ -6403,14 +6404,16 @@ input[type="color"]:focus,
   font-size: 11px;
   line-height: 1.5;
   border-radius: 3px;
-  color: #ffffff;
+  color: white;
   background-color: transparent;
-  border-color: #ffffff;
+  border-color: white;
   border-radius: 0px;
   border-right: 0;
   border-left: 0;
-  font-size: 1.7em;
+  font-size: 1em;
+  line-height: 1.4em;
   width: 300px;
+  margin-top: 10px;
 }
 .btn-enivar a:focus,
 .btn-enivar a:active:focus,
@@ -6451,7 +6454,7 @@ fieldset[disabled] .btn-enivar a {
 .btn-enivar a:active,
 .btn-enivar a.active,
 .open > .dropdown-toggle.btn-enivar a {
-  color: #ffffff;
+  color: white;
   background-color: rgba(0, 0, 0, 0);
   border-color: #e0e0e0;
 }
@@ -6479,11 +6482,11 @@ fieldset[disabled] .btn-enivar a:active,
 .btn-enivar a[disabled].active,
 fieldset[disabled] .btn-enivar a.active {
   background-color: transparent;
-  border-color: #ffffff;
+  border-color: white;
 }
 .btn-enivar a .badge {
   color: transparent;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-saiba-mais {
   display: inline-block;
@@ -6698,11 +6701,26 @@ header .form-buscar input {
 header .form-buscar .btn-find {
   border-left: 0px;
 }
+.barra-local {
+  border-bottom: solid 1px #a7a7a7;
+  color: #54bceb;
+}
+.barra-local h1 {
+  margin-top: 0px;
+  margin-bottom: 25px;
+  font-size: 1.7em;
+  line-height: 1.4em;
+}
 .barra-local .nome-pagina {
   text-align: left;
 }
 .barra-local .migalha {
   text-align: right;
+}
+.barra-local .migalha p {
+  color: #54bceb;
+  font-size: 0.9em;
+  line-height: 1.6em;
 }
 .menu-lateral {
   margin-top: 20px;
@@ -6717,8 +6735,8 @@ footer {
   padding-bottom: 55px;
   border-top: solid 1px black;
   background-color: #fbfbfb;
-  font-size: 1.1em;
-  line-height: 1.8em;
+  font-size: 0.9em;
+  line-height: 1.6em;
 }
 footer .sessao-footer .titulo-footer {
   border-bottom: solid 1px;
@@ -6749,6 +6767,7 @@ footer .sessao-footer .titulo-footer {
   text-transform: uppercase;
   text-align: center;
   font-size: 1.2em;
+  line-height: 1.4em;
 }
 .divisoria-tipo-01 .col-esq {
   border-right: solid 1px #fbfbfb;
@@ -6789,8 +6808,8 @@ footer .sessao-footer .titulo-footer {
   margin-bottom: 40px;
 }
 .titulo-form-simples p {
-  font-size: 2.6em;
-  line-height: 1.1em;
+  font-size: 2.7em;
+  line-height: 1.3em;
 }
 .form-simples {
   background-color: #54bceb;
@@ -6810,17 +6829,18 @@ footer .sessao-footer .titulo-footer {
   width: 265px;
   height: 40px;
   color: white;
-  line-height: 1.8em;
+  line-height: 1.4em;
+  font-size: 1.7em;
 }
 .form-simples .campo input::-moz-placeholder {
-  color: #ffffff;
+  color: white;
   opacity: 1;
 }
 .form-simples .campo input:-ms-input-placeholder {
-  color: #ffffff;
+  color: white;
 }
 .form-simples .campo input::-webkit-input-placeholder {
-  color: #ffffff;
+  color: white;
 }
 .form-simples .campo input input::-webkit-input-placeholder {
   font-size: 1.7em;
@@ -6835,6 +6855,7 @@ footer .sessao-footer .titulo-footer {
   font-size: 1.7em;
 }
 .vitrine-parceiros {
+  padding-top: 5px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -6844,21 +6865,30 @@ footer .sessao-footer .titulo-footer {
   height: 40px;
 }
 .barra-local {
-  color: #54bceb;
   vertical-align: text-bottom;
 }
 .barra-local h1 {
   text-align: left;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
-.barra-local p {
+.barra-local .migalha p {
   text-align: right;
-  margin: 17px 0 0;
+  margin: 9px 0 0;
+}
+.h4-interno {
+  color: #005596;
+  font-size: 1.7em;
+}
+.box-02-titulo {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.box-02-titulo .texto-box-02 h4 {
+  color: #005596;
+  font-size: 1.7em;
 }
 .box-03-titulo {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 .box-03-titulo .titulo-box-03 {
   text-align: center;
@@ -6866,16 +6896,23 @@ footer .sessao-footer .titulo-footer {
 }
 .box-03-titulo .titulo-box-03 h3 {
   color: #faa519;
+  font-size: 2.7em;
+  line-height: 1.3em;
+  margin-top: 0;
 }
 .mapa-suporte-tec {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.mapa-suporte-tec .lista .nome-estado {
+.mapa-suporte-tec .lista-hospital {
+  padding-top: 10px;
+}
+.mapa-suporte-tec .lista-hospital .nome-estado {
   text-transform: capitalize;
-  color: #54bceb;
+  color: #005596;
   border-top: solid black 1px;
   border-bottom: solid black 1px;
+  line-height: 1.5em;
 }
 .box-02 {
   margin-top: 40px;
@@ -7014,8 +7051,8 @@ footer .container-fluid {
 @media (min-width: 1201px) {
   .navbar {
     min-height: 145px;
-    margin-bottom: 33px;
-    padding-top: 80px;
+    margin-bottom: 38px;
+    padding-top: 100px;
     position: relative;
   }
   .navbar > .container-fluid {
@@ -7023,11 +7060,11 @@ footer .container-fluid {
   }
   header .navbar-default .navbar-collapse .navbar-nav {
     font-size: 1em;
-    line-height: 1.6em;
+    line-height: 1.4em;
     margin-top: 25px;
   }
   header .navbar-default .navbar-collapse .navbar-nav > li {
-    margin: 0 0 0 3px;
+    margin: 0 0 0 15px;
   }
   header .navbar-default .navbar-collapse .navbar-form {
     width: 240px;
